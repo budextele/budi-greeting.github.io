@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'UnifrakturCook', 'Uchen', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: black;
+    min-height: 100vh;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    pointer-events: none;
+}
+
+section #text {
+    padding-left: 700px;
+    padding-top: 150px;
+    position: absolute;
+    color: #F54748;
+    text-shadow: 5px 1px 3px #Fff;
+    font-size: 7vw;
+    letter-spacing: 8px;
+    text-align: center;
+    line-height: 1em;
+    font-family: 'Pirata One', 'Qahiri', 'UnifrakturCook', sans-serif;
+    transform: translateY(-50px);
+    margin-top: -70px;
+}
+
+section #text span {
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    text-shadow: -2px 1px 5px #fff;
+    font-weight: 400;
+    font-family: 'Lobster Two', sans-serif;
+}
+
+
+section #me {
+    padding-top: 710px;
+    position: absolute;
+    color: #F54748;
+    text-align: center;
+    font-size: large;
+    line-height: 1em;
+    font-family: 'Rancho', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+h3 {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: lightcoral;
+}
+
+@media screen and (orientation:portrait) {
+    .conten {
+        visibility: hidden;
+    }
+
+    h3 {
+        visibility: visible;
+    }
+
+}
+
+/*
+#star {
+    pointer-events: none;
+    animation: animate 3s ease-in-out infinite;
+}*/
+
+.star1,
+.star5 {
+    animation: animate 3s ease-in-out infinite;
+    animation-delay: -20s;
+}
+
+.star2,
+.star8 {
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: -10s;
+}
+
+.star3,
+.star6 {
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: -50s;
+}
+
+.star4,
+.star7 {
+    animation: animate 5s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+@keyframes animate {
+
+    0% {
+        opacity: 0%;
+    }
+
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+        -webkit-filter: drop-shadow(0px 0px 15px #fff);
+        filter: drop-shadow(0px 0px 10px #fff),
+    }
+
+}
+
+#content {
+    -webkit-filter: drop-shadow(-5px 5px 2px #fff);
+    filter: drop-shadow(5px -5px 2px #fff),
+}
+
+#frame {
+    -webkit-filter: drop-shadow(4px 4px 0 #F54748) drop-shadow(-4px -4px 0 #F54748);
+    filter: drop-shadow(4px 4px 0 #F54748) drop-shadow(-4px -4px 0 #F54748);
+}
+
+
+#biglamp {
+    -webkit-filter: drop-shadow(0px 0px 25px #fff);
+    filter: drop-shadow(0px 0px 45px #fff);
+    animation: blink 5s linear infinite;
+    animation-delay: -10s;
+
+}
+
+#lamp {
+    -webkit-filter: drop-shadow(0px 0px 25px #fff);
+    filter: drop-shadow(0px 0px 25px #fff);
+    animation: blink 3s linear infinite;
+    animation-delay: 0s;
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 25%;
+    }
+
+    25% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 25%;
+    }
+
+    75% {
+        opacity: 200%;
+
+
+    }
+
+    100% {
+        opacity: 25%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    section #text {
+        padding-left: 430px;
+
+    }
+
+    section #text span {}
+
+
+    section #me {
+        padding-top: 345px;
+        font-size: small;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    section #text {
+        padding-left: 380px;
+
+    }
+
+    section #text span {}
+
+
+    section #me {
+        padding-top: 345px;
+        font-size: small;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+
+    section #text {
+        padding-left: 320px;
+
+    }
+
+    section #text span {}
+
+
+    section #me {
+        padding-top: 300px;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    section #text {
+        padding-left: 280px;
+
+    }
+
+    section #text span {}
+
+
+    section #me {
+        padding-top: 270px;
+        font-size: x-small;
+    }
+}
