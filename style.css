@@ -40,7 +40,7 @@ section img {
 
 section #text {
     padding-left: 50%;
-    padding-top: 12%;
+    padding-top: 15%;
     position: absolute;
     color: #F54748;
     text-shadow: 5px 1px 3px #Fff;
@@ -58,6 +58,15 @@ section #text span {
     letter-spacing: 2px;
     text-shadow: -2px 1px 5px #fff;
     font-weight: 400;
+
+}
+
+.tahun {
+    font-family: 'Uchen', sans-serif;
+    line-height: 10px;
+}
+
+.mb {
     font-family: 'Lobster Two', sans-serif;
 }
 
@@ -190,70 +199,73 @@ h3 {
     }
 }
 
-/*
-@media screen and (max-width: 850px) {
+@media screen and (min-height: 315px) {
 
     section #text {
-        padding-left: 430px;
+        padding-top: 29%;
 
     }
 
-    section #text span {}
-
-
     section #me {
-        padding-top: 345px;
-        font-size: small;
+        padding-top: 47%;
     }
 }
 
-
-@media screen and (max-width: 750px) {
+@media screen and (min-height: 374px) {
 
     section #text {
-        padding-left: 380px;
+        padding-top: 24%;
 
     }
 
-    section #text span {}
-
-
     section #me {
-        padding-top: 345px;
-        font-size: small;
+        padding-top: 39%;
     }
 }
 
-
-@media screen and (max-width: 680px) {
-
-    section #text {
-        padding-left: 320px;
-
-    }
-
-    section #text span {}
-
+@media screen and (min-height: 374px) and (max-width : 668px) {
 
     section #me {
-        padding-top: 300px;
-        font-size: small;
+        padding-top: 46%;
     }
 }
 
-@media screen and (max-width: 570px) {
-
-    section #text {
-        padding-left: 280px;
-
-    }
-
-    section #text span {}
-
+@media screen and (min-height: 410px) {
 
     section #me {
-        padding-top: 270px;
-        font-size: x-small;
+        padding-top: 42%;
     }
 }
-*/
+
+@media screen and (min-height : 410px) and (max-width : 732px) {
+
+    section #me {
+        padding-top: 47%;
+    }
+}
+
+@media screen and (min-height : 410px) and (max-width : 738px) {
+
+    section #me {
+        padding-top: 47%;
+    }
+}
+
+@media screen and (min-height : 445px) {
+
+    section #text {
+        padding-top: 22%;
+
+    }
+
+    section #me {
+        padding-top: 37%;
+    }
+}
+
+@media screen and (min-height: 765px) {
+
+    section #me {
+        padding-top: 65%;
+    }
+}
