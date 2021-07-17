@@ -39,8 +39,8 @@ section img {
 }
 
 section #text {
-    padding-left: 700px;
-    padding-top: 150px;
+    padding-left: 50%;
+    padding-top: 12%;
     position: absolute;
     color: #F54748;
     text-shadow: 5px 1px 3px #Fff;
@@ -63,7 +63,7 @@ section #text span {
 
 
 section #me {
-    padding-top: 710px;
+    padding-top: 41.5%;
     position: absolute;
     color: #F54748;
     text-align: center;
@@ -84,6 +84,7 @@ h3 {
     color: lightcoral;
 }
 
+
 @media screen and (orientation:portrait) {
     .conten {
         visibility: hidden;
@@ -94,12 +95,6 @@ h3 {
     }
 
 }
-
-/*
-#star {
-    pointer-events: none;
-    animation: animate 3s ease-in-out infinite;
-}*/
 
 .star1,
 .star5 {
@@ -195,6 +190,7 @@ h3 {
     }
 }
 
+/*
 @media screen and (max-width: 850px) {
 
     section #text {
@@ -260,3 +256,4 @@ h3 {
         font-size: x-small;
     }
 }
+*/
